@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<h1> Curriculum vitae </h1>
+<div class="post">
+    <h2>Professional experience</h2>
+   {% for section in site.data.cv.professional_experience %}
+
+    <div><b>{{section.date}}:</b>
+    {{section.role}}
+    {% if section.university %}
+        at the
+        {% if section.university_url %}
+        <a href="{{section.university_url}}" target="_blank">
+        {% endif %}
+        {{section.university}}
+        {% if section.university_url %}
+        </a>
+        {% endif %}
+    {% endif %}
+    {% if section.supervisor %}
+        in the group of
+        {% if section.supervisor_url %}
+        <a href="{{section.supervisor_url}}" target="_blank">
+        {% endif %}
+        {{section.supervisor}}
+        {% if section.supervisor_url %}
+        </a>
+        {% endif %}
+    {% endif %}
+    </div>
+   {% endfor %}
+
+   <h2>Education</h2>
+   {% for section in site.data.cv.education %}
+
+    <div><b>{{section.date}}:</b>
+    <p>
+    {{section.title}}
+    {% if section.university %}
+        at the
+        {% if section.university_url %}
+        <a href="{{section.university_url}}" target="_blank">
+        {% endif %}
+        {{section.university}}
+        {% if section.university_url %}
+        </a>
+        {% endif %}
+    {% endif %}
+    </p><p>
+    {% if section.thesis %}
+        <b>Thesis title: </b>
+        {% if section.thesis_url %}
+        <a href="{{section.thesis_url}}" target="_blank">
+        {% endif %}
+        {{section.thesis}}
+        {% if section.thesis_url %}
+        </a>
+        {% endif %}
+    {% endif %}
+    {% if section.supervisor %}
+        Supervisor:
+        {% if section.supervisor_url %}
+        <a href="{{section.supervisor_url}}" target="_blank">
+        {% endif %}
+        {{section.supervisor}}
+        {% if section.supervisor_url %}
+        </a>
+        {% endif %}
+    {% endif %}
+    </p>
+    </div>
+   {% endfor %}
+
+   <h2>Awards</h2>
+   {% for section in site.data.cv.awards %}
+    <div>
+    <b>{{section.date}}</b>: {{section.name}}
+    </div>
+   {% endfor %}
+
+   <h2>Languages</h2>
+   {% for section in site.data.cv.languages %}
+    <div>
+        <b>{{section.language}}</b>: {{section.skill}}
+    </div>
+   {% endfor %}
+</div>

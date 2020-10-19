@@ -1,0 +1,74 @@
+professional_experience:
+    -
+        date: Oct. 2019 - present
+        role: Postdoctoral researcher
+        university: University of Vienna
+        university_url: https://www.univie.ac.at
+        supervisor: Prof. Leticia González
+        supervisor_url: https://www.theochem.univie.ac.at
+        description: |
+            Multi-line description
+    -
+        date: Dec. 2015 - Sep. 2019
+        role: Postdoctoral researcher
+        university: ETH Zurich
+        university_url: https://www.ethz.ch
+        supervisor: Prof. Markus Reiher
+        supervisor_url: https://reiher.ethz.ch
+        description: |
+            Multi-line description
+education:
+    -
+        date: Nov. 2011 - Nov. 2015
+        title: PhD
+        university: University of Vienna
+        university_url: https://www.univie.ac.at
+        supervisor: Prof. Leticia González
+        supervisor_url: https://www.theochem.univie.ac.at
+        thesis: Quantum chemical studies on electronic structure and photodynamics of ruthenium complexes
+        thesis_url: https://doi.org/10.25365/thesis.39705
+        description: |
+            Multi-line description
+    -
+        date: Oct. 2006 - Sep. 2011
+        title: German "Diplom" (equivalent to MSc)
+        university: Friedrich-Schiller-University Jena, Germany
+        university_url: https://www.uni-jena.de
+        thesis: "The hydrogen dissociation in dimethylfluoroethylene: a high accuracy quantum chemical study"
+        supervisor: Prof. Leticia González
+    -
+        date: Oct. 2008 - Jun. 2009
+        title: Exchange student
+        university: University of Oxford
+        university_url: https://www.ox.ac.uk
+awards:
+    -
+        date: 2017
+        name: Poster prize, 11th WATOC conference, Munich, Germany
+    -
+        date: 2016
+        name: Schrödinger fellowship of the Austrian Science Fund (FWF)
+    -
+        date: 2007-2011
+        name: German Academic Merit Foundation (Studienstiftung des deutschen Volkes) scholarship
+    -
+        date: 2009
+        name: DAAD IREU scholarship (International Research Experience for Undergraduates)
+
+languages:
+    -
+        language: Russian, Ukrainian, Polish
+        skill: mother tongue
+    -
+        language: German
+        skill: mother tongue equivalent
+    -
+        language: English
+        skill: fluent
+    -
+        language: Italian
+        skill: fluent
+    -
+        language: Bulgarian, Serbian
+        skill: intermediate
+
