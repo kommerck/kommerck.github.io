@@ -450,6 +450,27 @@ footer.sticky-bottom {
   }
 }
 
+/*
+  CV
+*/
+.cvhead {
+    padding-top: 15px;
+    font-size: x-large;
+    .fas {
+       float: right;
+       margin: 0 0 0 auto;
+       color: $grey-color-light;
+    }
+}
+
+.cventry {
+    padding-bottom: 15px;
+    position: relative;
+    width: 70%;
+ /*   background: url('/assets/img/univie.svg');
+    background-position: -0% 0;*/
+}
+
 // Rouge Color Customization
 code {
   color: var(--global-theme-color);

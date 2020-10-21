@@ -3,10 +3,11 @@ layout: default
 ---
 <h1> Curriculum vitae </h1>
 <div class="post">
-    <h2>Professional experience</h2>
+    <div class="cvhead border-bottom"><i class="fas fa-chalkboard-teacher"></i>professional experience</div>
    {% for section in site.data.cv.professional_experience %}
 
-    <div><b>{{section.date}}:</b>
+    <div class="cventry"><b>{{section.date}}</b>
+    <br />
     {{section.role}}
     {% if section.university %}
         at the
@@ -19,6 +20,7 @@ layout: default
         {% endif %}
     {% endif %}
     {% if section.supervisor %}
+        <br />
         in the group of
         {% if section.supervisor_url %}
         <a href="{{section.supervisor_url}}" target="_blank">
@@ -31,11 +33,11 @@ layout: default
     </div>
    {% endfor %}
 
-   <h2>Education</h2>
+   <div class="cvhead border-bottom"><i class="fas fa-university"></i>education</div>
    {% for section in site.data.cv.education %}
 
-    <div><b>{{section.date}}:</b>
-    <p>
+    <div class="cventry"><b>{{section.date}}</b>
+    <br />
     {{section.title}}
     {% if section.university %}
         at the
@@ -47,7 +49,7 @@ layout: default
         </a>
         {% endif %}
     {% endif %}
-    </p><p>
+    <br />
     {% if section.thesis %}
         <b>Thesis title: </b>
         {% if section.thesis_url %}
@@ -58,6 +60,7 @@ layout: default
         </a>
         {% endif %}
     {% endif %}
+    <br />
     {% if section.supervisor %}
         Supervisor:
         {% if section.supervisor_url %}
@@ -68,18 +71,17 @@ layout: default
         </a>
         {% endif %}
     {% endif %}
-    </p>
     </div>
    {% endfor %}
 
-   <h2>Awards</h2>
+   <div class="cvhead border-bottom"><i class="fas fa-award"></i>awards</div>
    {% for section in site.data.cv.awards %}
     <div>
     <b>{{section.date}}</b>: {{section.name}}
     </div>
    {% endfor %}
 
-   <h2>Languages</h2>
+   <div class="cvhead border-bottom"><i class="fas fa-language"></i>languages</div>
    {% for section in site.data.cv.languages %}
     <div>
         <b>{{section.language}}</b>: {{section.skill}}
