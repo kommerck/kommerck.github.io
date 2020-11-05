@@ -4,13 +4,13 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Leon
-#middle_name: R.
+#middle_name:
 last_name: Freitag
 email: leon.freitag@univie.ac.at
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Leon's personal page.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, theme based on <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 url:  # the base hostname & protocol for your site
@@ -39,6 +39,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: kommerck
+gitlab_username: kommerck
 twitter_username: # your Twitter handle
 linkedin_username: leon-freitag
 scholar_userid: # your Google Scholar ID
@@ -67,7 +68,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: kommerck # put your disqus shortname
+#disqus_shortname: kommerck # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -79,9 +80,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  #projects:
-    #output: true
-    #permalink: /projects/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 news_limit: 5
 

@@ -16,7 +16,7 @@ professional_experience:
         supervisor: Prof. Markus Reiher
         supervisor_url: https://reiher.ethz.ch
         description: |
-            Multi-line description
+            Developed high-accuracy quantum chemical methods for excited states of large transition metal complexes. Co-developed numerical codes in C++, Fortran and Python
 education:
     -
         date: Nov. 2011 - Nov. 2015
