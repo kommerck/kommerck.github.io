@@ -75,7 +75,7 @@
     {% endif %}-->
     {% if entry.doi %}
 <!--       <a href="https://doi.org/{{ entry.doi }}" target="_blank"><i class="ai ai-doi"></i></a> -->
-        <a href="http://arxiv.org/abs/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
+        <a href="http://doi.org/abs/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button" target="_blank">DOI</a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
